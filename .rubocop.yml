@@ -1,0 +1,29 @@
+Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+AllCops:
+  Include:
+    - '**/*.rb'
+  Exclude:
+    - db/**
+    - config/**
+    - config/initializers/**
+    - config/environments/**
+    - config/deploy/**
+    - config/keys/**
+    - script/**
+    - bin/**
+    - db/migrate/**
+    - lib/**
+    - spec/**/*
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - spec/**/*
