@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: politiscope-api_dev
+  database: junkie_dev_0514
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

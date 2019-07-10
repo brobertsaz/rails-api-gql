@@ -22,7 +22,7 @@ module Mutations
 
       {
         user: user,
-        token: token,
+        token: token.jwt,
         errors: []
       }
     end

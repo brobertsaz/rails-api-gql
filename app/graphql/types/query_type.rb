@@ -5,7 +5,11 @@ module Types
     field :all_bills, BillType.connection_type, null: false
 
     def all_bills
-      Bill.visible
+      if @context[:current_user]
+        Bill.visible
+      else
+        GraphQL::ExecutionError.new('User not registered on this application')
+      end
     end
 
     field :featured_bills, BillType.connection_type, null: false
