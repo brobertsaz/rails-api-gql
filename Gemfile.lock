@@ -127,7 +127,7 @@ GEM
       pry (~> 0.10)
       pry-byebug (~> 3.4)
       pry-coolline (~> 0.2)
-    json (2.2.0)
+    json (2.3.1)
     jwt (1.5.6)
     knock (2.1.1)
       bcrypt (~> 3.1)
